@@ -1,0 +1,146 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0px auto;
+  background-color: #fcde67;
+}
+
+/* display="flex"
+alignItems="center"
+width="90%"
+mt="10px"
+height="100px"
+sx={{
+  flexDirection: { xs: "column-reverse", sm: "row" },
+  justifyContent: { xs: "space-between", sm: "space-around" },
+}} */
+
+.filterContainer {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin-top: 10px;
+  height: 100px;
+  justify-content: space-around;
+}
+
+/* Style to categories */
+.container .categoary {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 90vw;
+  margin-top: 50px;
+  height: 80px;
+}
+
+.container .categoary div {
+  font-size: 17px;
+  font-weight: 600;
+  font-style: italic;
+  border-bottom: 2px solid #a1a1a1;
+  color: #030e12;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  width: 100px;
+  text-align: center;
+  transition: all 0.2 ease-in;
+}
+
+.container .categoary div:active {
+  color: red;
+}
+
+/* Shopping style */
+.container .orders {
+  height: 100%;
+  margin-top: 10px;
+  width: 90vw;
+}
+
+/* Style the filter buttons */
+.container .filterOrders {
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  color: red;
+  background-color: rgba(255, 255, 255, 0.756);
+  border-radius: 5px;
+  margin: 20px auto;
+}
+
+.container .noneOrders {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.container .noneOrders span {
+  background: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .login {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.container .loginContainer {
+  background-color: rgba(255, 255, 255, 0.756);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  margin: 5px;
+}
+
+.container .loginContainer div {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.container .loginContainer div a {
+  color: #fff;
+  background-color: #1a73e8;
+  padding: 2px 5px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* Responsive */
+/* Media 600px */
+@media screen and (max-width: 600px) {
+  .filterContainer {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+  .container .noneOrders {
+    width: 250px;
+    text-align: justify;
+  }
+  .container .categoary div {
+    font-size: 10px;
+    width: 55px;
+    padding: 5px;
+  }
+  .container .loginContainer {
+    padding: 10px;
+  }
+  .container .loginContainer span {
+    font-size: 14px;
+  }
+  .container .loginContainer div a {
+    font-size: 12px;
+  }
+}

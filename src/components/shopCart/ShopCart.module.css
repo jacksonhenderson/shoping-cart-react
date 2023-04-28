@@ -1,0 +1,173 @@
+.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fcde67;
+  position: relative;
+}
+
+.container .products {
+  margin-top: 200px;
+  width: 80%;
+}
+
+.container .payments {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  display: flex;
+  margin-top: 10px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container .payments .message {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
+}
+
+.container .payments .message p {
+  font-size: 16px;
+  font-weight: bold;
+  color: blue;
+}
+
+.container .payments .message span {
+  color: #030e12;
+}
+
+.container .payments .buttonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 75%;
+  margin-bottom: 10px;
+}
+
+.container .payments .buttonContainer button,
+.container .checkout {
+  width: 120px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .payments .buttonContainer button:nth-child(1) {
+  background-color: rgb(250, 63, 42);
+}
+
+.container .payments .buttonContainer button:nth-child(2) {
+  background-color: green;
+}
+
+.container .payments .buttonContainer .checkout {
+  background-color: orange;
+  text-decoration: none;
+}
+
+.container .complete {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px 40px;
+  margin: 0 auto;
+  height: 100px;
+  margin-bottom: 200px;
+}
+
+.container .complete a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: blue;
+  color: #ffffff;
+  padding: 3px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.container .complete a svg {
+  margin-top: 5px;
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+.container .showBanner {
+  position: absolute;
+  margin: 0 auto;
+  width: 300px;
+  height: 70px;
+  background: #b1aead;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.container .showBanner .routeContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 576px) {
+  .container .complete {
+    padding: 20px 30px;
+  }
+
+  .container .complete h3 {
+    font-size: 14px;
+  }
+
+  .container .complete a {
+    font-size: 13px;
+  }
+
+  .container .payments .message p {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container .payments .message {
+    flex-direction: column;
+  }
+
+  .container .payments .buttonContainer button {
+    width: 80px;
+    height: 20px;
+    font-size: 10px;
+  }
+
+  .container .complete {
+    padding: 10px 20px;
+  }
+
+  .container .complete h3 {
+    font-size: 12px;
+  }
+
+  .container .complete a {
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,146 @@
+.container {
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #fcde67;
+}
+
+.container .loading {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.container .error {
+  display: flex;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.container .profile {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  height: 490px;
+  width: 300px;
+  border-radius: 55px;
+  background: linear-gradient(225deg, #cacaca, #f0f0f0);
+}
+
+.container .profile .image {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../../img/user.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container .profile .image img {
+  border-radius: 50%;
+  position: absolute;
+  width: 97%;
+  height: 97%;
+  object-fit: cover;
+}
+
+.container .profile .info {
+  display: flex;
+  flex-direction: column;
+}
+
+.container .profile .info h3 {
+  margin: 5px;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.container .profile .info h3 span {
+  color: #696262;
+  font-size: 18px;
+}
+
+.container .profile .buttonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.container .profile .buttonContainer div {
+  width: 100px;
+  height: 30px;
+  margin: 0 auto;
+  border: none;
+  background-color: #1a73e8;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  color: white;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.container .profile .buttonContainer div:hover {
+  transform: translateY(-10px);
+  background-color: #004aaa;
+}
+
+.container .profile .buttonContainer div a {
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-width: 576px) {
+  .container .profile {
+    height: 400px;
+    width: 250px;
+  }
+  .container .buttonContainer div {
+    width: fit-content !important;
+    height: 25px !important;
+    padding: 2px;
+    font-size: 13px;
+  }
+  .container .profile .info h3 {
+    font-size: 16px;
+  }
+  .container .profile .info h3 span {
+    font-size: 15px;
+  }
+  .container .profile .image {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container .profile {
+    height: 340px;
+    width: 200px;
+  }
+
+  .container .profile .image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .container .profile .info h3 {
+    font-size: 14px;
+  }
+  .container .profile .info h3 span {
+    font-size: 12px;
+  }
+}

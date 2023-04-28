@@ -1,0 +1,43 @@
+.container {
+  width: 350px;
+  height: 310px;
+}
+
+.category {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px !important;
+}
+
+.formControl {
+  width: 95%;
+  overflow-y: unset;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+}
+
+.priceIcon {
+  width: 17px;
+}
+
+.radioGroup {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 200px;
+  }
+}

@@ -1,0 +1,44 @@
+.notFound {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.purchasedProduct {
+  height: 70px;
+  width: 50px;
+  margin: 0 5px;
+  border-radius: 10px;
+  border: 3px green solid;
+  padding: 5px;
+  background-color: aliceblue;
+}
+
+@media screen and (max-width: 400px) {
+  .purchasedProduct {
+    height: 50px;
+    width: 30px;
+  }
+}
+
+.imageAboutUs {
+  width: 500px;
+  border-radius: 10px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 900px) {
+  .imageAboutUs {
+    width: 350px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .imageAboutUs {
+    width: 250px;
+    height: 150px;
+  }
+}

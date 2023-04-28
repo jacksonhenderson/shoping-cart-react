@@ -1,0 +1,140 @@
+.container {
+  width: 85vw;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: rgb(252, 252, 248);
+  box-sizing: content-box;
+  border-radius: 5px;
+  margin: 20px 0px;
+}
+
+.container .images {
+  width: 50%;
+}
+
+.container img {
+  height: 70px;
+  width: 50px;
+  margin: 0 5px;
+  border-radius: 10px;
+  border: 3px green solid;
+  padding: 5px;
+  background-color: aliceblue;
+}
+
+.container .info {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #030e12;
+}
+
+.container .status {
+  display: flex;
+  align-items: center;
+}
+
+.container .status .successful,
+.container .status .unsuccessful {
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.container .successful {
+  color: green;
+}
+
+.container .unsuccessful {
+  color: red;
+}
+
+.container .payments {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.container .payments p {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.container .payments .itemsCounter {
+  color: blue;
+  font-size: 18px;
+}
+
+.container .payments .total {
+  color: red;
+  font-size: 18px;
+}
+/* Responsive */
+/* Media 768px */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: 100%;
+    margin: 10px 0;
+  }
+
+  .container .images {
+    width: 100%;
+  }
+
+  .container .info {
+    flex-direction: column-reverse;
+  }
+
+  .container .payments {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .container .payments p {
+    font-size: 15px;
+  }
+
+  .container .status .successful,
+  .container .status .unsuccessful {
+    font-size: 12px;
+  }
+
+  .container .itemsCounter,
+  .container .total {
+    font-size: 16px !important;
+  }
+}
+/* Media 576px */
+@media screen and (max-width: 576px) {
+  .container .images {
+    grid-template-columns: repeat(auto-fit, 20px);
+  }
+}
+/* Media 400px */
+@media screen and (max-width: 400px) {
+  .container {
+    padding: 5px;
+  }
+  .container img {
+    height: 50px;
+    width: 30px;
+  }
+  .container .payments p {
+    font-size: 12px;
+  }
+
+  .container .status .successful,
+  .container .status .unsuccessful {
+    font-size: 10px;
+  }
+
+  .container .itemsCounter,
+  .container .total {
+    font-size: 13px !important;
+  }
+}

@@ -1,0 +1,158 @@
+:root {
+  --background: #5bccf6;
+  --text-color: #030e12;
+}
+
+.container {
+  height: 400px;
+  background-color: var(--background);
+  padding: 70px 0;
+}
+
+.container .information {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  height: 380px;
+  position: relative;
+}
+
+.container .information section,
+.container .information div {
+  display: flex;
+  flex-direction: column;
+}
+
+.container .information div a {
+  margin: 5px 0;
+  padding: 2px;
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.container .information .follow div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.container .information .follow svg {
+  margin-right: 7px;
+}
+
+.container .information div a,
+.container .information .follow div svg,
+.container .information .follow div a {
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.container .information div a:hover,
+.container .information .follow div:hover svg,
+.container .information .follow div:hover a {
+  color: #6d6b6b;
+}
+/* Copy Right */
+.container .copyRight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #0fb3ee;
+  width: 100%;
+}
+
+.container .copyRight h5 span {
+  text-decoration: rgb(112, 110, 110) wavy underline;
+}
+
+/* Responsive */
+
+/* Media 768px */
+@media screen and (max-width: 768px) {
+  .container .information h2 {
+    font-size: 20px;
+  }
+
+  .container .copyRight {
+    text-align: center;
+  }
+  .container .copyRight h5 {
+    font-size: 14px;
+    width: 70%;
+  }
+  .container .copyRight p {
+    font-size: 12px;
+    width: 70%;
+  }
+}
+
+/* Media 576px */
+@media screen and (max-width: 576px) {
+  .container .information h2 {
+    font-size: 17px;
+  }
+
+  .container .information div a {
+    font-size: 14px;
+  }
+
+  .container .copyRight {
+    text-align: center;
+  }
+  .container .copyRight h5 {
+    font-size: 12px;
+    width: 85%;
+  }
+  .container .copyRight p {
+    font-size: 10px;
+    width: 85%;
+  }
+}
+
+/* Media 400px */
+@media screen and (max-width: 400px) {
+  .container {
+    height: 850px;
+    padding: 30px 0;
+  }
+
+  .container .information {
+    flex-direction: column;
+    height: 750px;
+  }
+
+  .container .information section,
+  .container .information div {
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .container .information h2 {
+    font-size: 15px;
+  }
+
+  .container .information div a {
+    font-size: 14px;
+  }
+
+  .container .copyRight {
+    text-align: center;
+  }
+  .container .copyRight h5 {
+    font-size: 10px;
+    width: 90%;
+  }
+  .container .copyRight p {
+    font-size: 10px;
+    width: 90%;
+  }
+}

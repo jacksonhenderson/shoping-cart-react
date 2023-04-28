@@ -1,0 +1,93 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  height: 100vh;
+  width: 500px;
+}
+
+.container .successful,
+.container .Failed {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 150px;
+  padding: 20px 40px;
+  border-radius: 5px;
+}
+
+.container .successful span,
+.container .Failed span {
+  font-size: 17px;
+  text-align: center;
+}
+
+.container .Failed a,
+.container .successful a {
+  background-color: blue;
+  color: #fff;
+  padding: 3px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin: 20px 0px;
+}
+
+.container .successful {
+  background: rgba(132, 254, 132, 0.656);
+}
+
+.container .Failed {
+  background: rgba(248, 122, 122, 0.656);
+}
+/* Responsive */
+/* Media 576px */
+@media screen and (max-width: 576px) {
+  .container {
+    width: 300px;
+  }
+
+  .container .successful,
+  .container .Failed {
+    padding: 5px 10px;
+  }
+
+  .container .successful span,
+  .container .Failed span {
+    font-size: 15px;
+  }
+
+  .container h3,
+  .continer h3 {
+    font-size: 17px;
+  }
+
+  .container .successful a,
+  .container .Failed a {
+    font-size: 13px;
+  }
+}
+
+/* Media 400px*/
+@media screen and (max-width: 400px) {
+  .container {
+    width: 200px;
+  }
+
+  .container .successful,
+  .container .Failed {
+    padding: 5px;
+  }
+
+  .container .successful span,
+  .container .Failed span {
+    font-size: 10px;
+    text-align: justify;
+  }
+
+  .container h3,
+  .continer h3 {
+    font-size: 13px;
+  }
+}

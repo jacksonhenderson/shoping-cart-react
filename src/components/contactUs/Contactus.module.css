@@ -1,0 +1,225 @@
+.container {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  background-color: #fff;
+  height: 100vh;
+  position: relative;
+}
+
+/* Styling communications */
+.container .contact {
+  position: absolute;
+  right: 0;
+  bottom: 12%;
+  top: 15%;
+  background: #fcde67;
+  color: #030e12;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 270px;
+  padding: 0px 7px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.container .contact > article {
+  display: flex;
+  align-items: center;
+  height: 200px;
+  color: #1a73e8;
+}
+
+.container .contact > article svg {
+  font-size: 35px;
+}
+
+.container .contact > article div {
+  margin-left: 10px;
+}
+
+.container .contact > article div h4,
+.container .contact > article div p {
+  margin: 0;
+}
+
+.container .contact > article div p {
+  display: inline-block;
+  text-align: justify;
+}
+
+.container .sendEmail {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-bottom: 10px;
+  background: #fcde67;
+  left: 10%;
+  width: 54%;
+  bottom: 12%;
+  top: 15%;
+  right: 70%;
+  border-radius: 20px;
+}
+
+.container .sendEmail form {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.container .sendEmail h2 {
+  color: #1a73e8;
+}
+
+/* Style the comment section */
+.container .sendEmail input[type="submit"] {
+  margin-top: 20px;
+  width: 120px;
+  height: 40px;
+  margin-bottom: 5px;
+  background-color: #1a73e8;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 17px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.container .sendEmail input[type="submit"]:hover {
+  background-color: #fff;
+  color: #1a73e8;
+}
+
+.container .sendComment {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container .sendComment .loder {
+  margin-top: 15px;
+}
+
+.container .notifi {
+  position: absolute;
+  top: 60px;
+  right: 15px;
+  font-weight: 600;
+  color: #fff;
+  z-index: 20;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Styling the notification section */
+.container .notifi.messageSuccess {
+  background-color: green;
+}
+
+.container .notifi.messageFailed {
+  background-color: red;
+}
+
+/* Responsive */
+@media screen and (max-width: 992px) {
+  .container .contact {
+    width: 200px;
+  }
+  .container .contact > article svg {
+    font-size: 25px;
+  }
+  .container .sendEmail {
+    left: 2%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container .sendEmail .inputGroup input,
+  .container .sendEmail .inputGroup textarea {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    height: auto;
+  }
+  .container .contact,
+  .container .sendEmail {
+    position: static;
+    inset: 0;
+  }
+
+  .container .sendEmail {
+    display: flex;
+    align-items:center;
+    margin-top: 70px;
+    width: 80vw;
+  }
+
+  .container .contact {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 20px;
+    background: none;
+    margin: 20px 0;
+  }
+
+  .container .contact > article {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    color: #1a73e8;
+    background: #fcde67;
+    width: 170px;
+    height: 170px;
+    border-top-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+  }
+
+  .container .contact > article svg {
+    font-size: 35px;
+  }
+
+  .container .contact > article p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container .notifi {
+    right: auto;
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container .sendEmail {
+    width: 90vw;
+  }
+
+  .container .sendEmail .inputGroup input,
+  .container .sendEmail .inputGroup textarea {
+    width: 190px;
+  }
+  .container .contact {
+    grid-template-columns: repeat(1, auto);
+  }
+
+  .container .sendEmail input[type="submit"] {
+    width: 70px;
+    height: 30px;
+    font-size: 13px;
+  }
+}

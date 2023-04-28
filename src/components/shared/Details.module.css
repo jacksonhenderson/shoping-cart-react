@@ -1,0 +1,214 @@
+.container {
+  margin: 0 auto;
+  background-color: #f8f3f1;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container > div {
+  display: flex;
+  align-items: center;
+  width: 95%;
+}
+
+.container > div .image {
+  display: flex;
+  width: 450px;
+  height: 450px;
+}
+
+.container > div .image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.container > div .title_description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 450px;
+  width: 62%;
+  margin: 0 20px;
+}
+
+.container > div .title_description .title span {
+  display: flex;
+  font-size: 25px;
+  font-weight: 500;
+  text-align: justify;
+}
+
+.container > div .title_description .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container > div .title_description .description h4 {
+  font-size: 20px;
+}
+
+.container > div .title_description .description p {
+  font-size: 17px;
+  line-height: 25px;
+  text-align: justify;
+}
+
+.container > div .flexEnd {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 450px;
+  width: 230px;
+}
+
+.container > div .flexEnd .category,
+.container > div .flexEnd .price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.container > div .flexEnd .buttonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.container > div .flexEnd .buttonContainer .counter {
+  background: orange;
+  width: 25px;
+  height: 25px;
+  display: inherit;
+  line-height: 25px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.container > div .flexEnd .buttonContainer button {
+  font-size: 0.9rem;
+  background-color: #1a73e8;
+  border: none;
+  color: #fff;
+  height: 30px;
+  width: 120px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 4px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  margin-left: 5px;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+}
+
+.container > div .flexEnd .buttonContainer .smallButton {
+  width: 30px !important;
+  font-size: 1.6rem !important;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.container > div .flexEnd .buttonContainer .smallButton svg {
+  font-size: 17px;
+  margin-right: 10px;
+}
+
+.container > div .flexEnd .buttonContainer button:hover {
+  background-color: #0b499b;
+}
+
+/* Responsive */
+@media screen and (max-width: 992px) {
+  .container {
+    height: 100%;
+  }
+  .container > div {
+    flex-direction: column;
+    margin-top: 100px;
+    width: 100%;
+  }
+
+  .container > div .image {
+    width: 400px;
+    height: 450px;
+  }
+
+  .container > div .title_description {
+    margin-top: 50px;
+    height: 350px;
+    width: 80%;
+  }
+
+  .container > div .title_description .title span {
+    font-size: 20px;
+  }
+
+  .container > div .title_description .description h4 {
+    font-size: 17px;
+  }
+
+  .container > div .title_description .description p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container > div .title_description .title span {
+    font-size: 17px;
+  }
+
+  .container > div .title_description .description h4 {
+    font-size: 15px;
+  }
+
+  .container > div .title_description .description p {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container > div .image {
+    width: 330px;
+    height: 380px;
+  }
+
+  .container > div .title_description {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container > div .image {
+    width: 230px;
+    height: 280px;
+  }
+  .container > div .title_description .title span {
+    font-size: 15px;
+  }
+  .container > div .title_description {
+    height: auto;
+  }
+}

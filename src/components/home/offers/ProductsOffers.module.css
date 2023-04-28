@@ -1,0 +1,41 @@
+.container {
+  margin: 25px 10px;
+  padding: 25px 10px;
+  height: 60%;
+}
+/* Navbar */
+.container .nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  height: 50px;
+  background-color: #5bccf6;
+}
+
+.container .nav .title {
+  font-size: 20px;
+  color: #111111;
+  font-weight: 700;
+}
+
+.container .nav .goStore {
+  font-size: 20px;
+  color: #111111;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.container .nav .goStore svg {
+  margin-top: 3px;
+  color: gray;
+}
+/* Responsive  */
+/* Media 600px */
+@media screen and (max-width: 600px) {
+  .container .nav .title {
+    font-size: 15px;
+  }
+}
